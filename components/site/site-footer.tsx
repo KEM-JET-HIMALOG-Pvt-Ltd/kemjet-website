@@ -9,6 +9,7 @@ const COMPANY_LINKS = [
   { label: 'Values', href: '/#values' },
   { label: 'Corporate Profile', href: '/#corporate' },
   { label: 'Contact', href: '/#contact' },
+  { label: 'Careers', href: '/#careers'},
 ]
 
 export function SiteFooter() {
