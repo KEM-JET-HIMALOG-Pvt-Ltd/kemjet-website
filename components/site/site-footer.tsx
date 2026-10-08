@@ -9,7 +9,7 @@ const COMPANY_LINKS = [
   { label: 'Values', href: '/#values' },
   { label: 'Corporate Profile', href: '/#corporate' },
   { label: 'Contact', href: '/#contact' },
-  { label: 'Careers', href: '/#careers'},
+  { label: 'Careers', href: '/careers' },  
 ]
 
 export function SiteFooter() {
@@ -22,7 +22,7 @@ export function SiteFooter() {
             <Wordmark />
             <p className="mt-8 max-w-sm font-serif text-2xl leading-snug text-ivory/90 text-balance">
               A diversified enterprise rooted in the Himalayas, building across education, infrastructure, materials,
-              technology and permit services.
+              technology, permit services and agriculture.
             </p>
           </div>
 
@@ -82,3 +82,4 @@ export function SiteFooter() {
     </footer>
   )
 }
+

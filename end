@@ -1,0 +1,44 @@
+[1mdiff --git a/lib/site.ts b/lib/site.ts[m
+[1mindex 392ed8d..19a5f4b 100644[m
+[1m--- a/lib/site.ts[m
+[1m+++ b/lib/site.ts[m
+[36m@@ -149,6 +149,39 @@[m [mexport const BUSINESSES: Business[] = [[m
+     storyImage: '/images/permit-story.png',[m
+     storyImageAlt: 'Hands arranging documents and folders into an orderly sequence on a wooden table',[m
+   },[m
+[32m+[m[32m {[m
+[32m+[m[32m    slug: 'farming',[m
+[32m+[m[32m    index: '06',[m
+[32m+[m[32m    name: 'Farming',[m
+[32m+[m[32m    category: 'Agriculture & Horticulture',[m
+[32m+[m[32m    summary:[m
+[32m+[m[32m      'The group’s agriculture and horticulture business, with a focus on cultivation including vanilla and macadamia.',[m
+[32m+[m[32m    statement: 'Cultivating what grows next.',[m
+[32m+[m[32m    introduction:[m
+[32m+[m[32m      'Farming is the agriculture and horticulture business of Kemjet Himalog. The business focuses on cultivation and agricultural activity, including horticultural crops such as vanilla and macadamia.',[m
+[32m+[m[32m    focus: [[m
+[32m+[m[32m      {[m
+[32m+[m[32m        title: 'Agriculture',[m
+[32m+[m[32m        description: 'Agricultural activity rooted in the region and its growing conditions.',[m
+[32m+[m[32m      },[m
+[32m+[m[32m      {[m
+[32m+[m[32m        title: 'Horticulture',[m
+[32m+[m[32m        description: 'Horticultural cultivation with a focus on selected crops and long-term development.',[m
+[32m+[m[32m      },[m
+[32m+[m[32m      {[m
+[32m+[m[32m        title: 'Vanilla & Macadamia',[m
+[32m+[m[32m        description: 'Cultivation of vanilla and macadamia as part of the business’s horticultural activities.',[m
+[32m+[m[32m      },[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    storyLine: 'Growing from the land, toward the future.',[m
+[32m+[m[32m    regional:[m
+[32m+[m[32m      'Agriculture and horticulture are closely connected to the land and communities of the North East. Farming adds another dimension to the Kemjet portfolio, extending its focus into cultivation and agricultural development.',[m
+[32m+[m[32m    note: 'The farming business focuses on agriculture and horticulture, including vanilla and macadamia cultivation.',[m
+[32m+[m[32m    image: '/images/farming.png',[m
+[32m+[m[32m    imageAlt: 'Agricultural landscape representing farming and horticulture in the Himalayan region',[m
+[32m+[m[32m    storyImage: '/images/farming-story.png',[m
+[32m+[m[32m    storyImageAlt: 'Horticultural cultivation representing vanilla and macadamia farming',[m
+[32m+[m[32m  },[m
+ ][m
+ [m
+ export function getBusiness(slug: string) {[m

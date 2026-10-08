@@ -1,7 +1,7 @@
 import { Hero } from '@/components/home/hero'
 import { BusinessMarquee } from '@/components/home/business-marquee'
 import { WhoWeAre } from '@/components/home/who-we-are'
-import { FiveBusinesses } from '@/components/home/five-businesses'
+import { SixBusinesses } from '@/components/home/six-businesses'
 import { FeaturedBusiness } from '@/components/home/featured-business'
 import { NorthEast } from '@/components/home/north-east'
 import { Philosophy } from '@/components/home/philosophy'
@@ -15,7 +15,7 @@ export default function HomePage() {
       <Hero />
       <BusinessMarquee />
       <WhoWeAre />
-      <FiveBusinesses />
+      <SixBusinesses />
       <FeaturedBusiness />
       <NorthEast />
       <Philosophy />

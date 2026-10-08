@@ -1,4 +1,4 @@
-const SECTORS = ['Education', 'Infrastructure', 'Manufacturing', 'Technology', 'Permit Services']
+const SECTORS = ['Education', 'Infrastructure', 'Manufacturing', 'Technology', 'Permit Services','Agriculture & Horticulture',]
 
 function Row({ hidden }: { hidden?: boolean }) {
   return (

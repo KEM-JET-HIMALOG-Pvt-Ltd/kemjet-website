@@ -4,7 +4,7 @@ import { Reveal } from '@/components/site/reveal'
 
 const FACTS = [
   { label: 'Registered in', value: 'Tawang, Arunachal Pradesh' },
-  { label: 'Businesses', value: 'Five' },
+  { label: 'Businesses', value: 'Six' },
   { label: 'Vision', value: 'One' },
 ]
 
@@ -51,7 +51,7 @@ export function WhoWeAre() {
             </Reveal>
             <Reveal delay={120}>
               <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-                The company brings together five businesses — spanning school education, construction and
+                The company brings together Six businesses — spanning school education, construction and
                 transportation, construction products, digital platforms and permit services — under one larger
                 vision: to build responsibly from the Himalayas, with a long-term view of the region and the people who
                 call it home.

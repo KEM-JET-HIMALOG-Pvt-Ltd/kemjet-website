@@ -149,6 +149,39 @@ export const BUSINESSES: Business[] = [
     storyImage: '/images/permit-story.png',
     storyImageAlt: 'Hands arranging documents and folders into an orderly sequence on a wooden table',
   },
+ {
+    slug: 'farming',
+    index: '06',
+    name: 'Farming',
+    category: 'Agriculture & Horticulture',
+    summary:
+      'The group’s agriculture and horticulture business, with a focus on cultivation including vanilla and macadamia.',
+    statement: 'Cultivating what grows next.',
+    introduction:
+      'Farming is the agriculture and horticulture business of Kemjet Himalog. The business focuses on cultivation and agricultural activity, including horticultural crops such as vanilla and macadamia.',
+    focus: [
+      {
+        title: 'Agriculture',
+        description: 'Agricultural activity rooted in the region and its growing conditions.',
+      },
+      {
+        title: 'Horticulture',
+        description: 'Horticultural cultivation with a focus on selected crops and long-term development.',
+      },
+      {
+        title: 'Vanilla & Macadamia',
+        description: 'Cultivation of vanilla and macadamia as part of the business’s horticultural activities.',
+      },
+    ],
+    storyLine: 'Growing from the land, toward the future.',
+    regional:
+      'Agriculture and horticulture are closely connected to the land and communities of the North East. Farming adds another dimension to the Kemjet portfolio, extending its focus into cultivation and agricultural development.',
+    note: 'The farming business focuses on agriculture and horticulture, including vanilla and macadamia cultivation.',
+    image: '/images/farming.png',
+    imageAlt: 'Agricultural landscape representing farming and horticulture in the Himalayan region',
+    storyImage: '/images/farming-story.png',
+    storyImageAlt: 'Horticultural cultivation representing vanilla and macadamia farming',
+  },
 ]
 
 export function getBusiness(slug: string) {
