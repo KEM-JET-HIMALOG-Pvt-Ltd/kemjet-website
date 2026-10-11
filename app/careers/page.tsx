@@ -1,6 +1,6 @@
-import { ArrowLink, Eyebrow } from '@/components/site/primitives'
+import { Eyebrow, Topo } from '@/components/site/primitives'
 import { Reveal } from '@/components/site/reveal'
-import { Topo } from '@/components/site/primitives'
+import { ContactDialogTrigger } from '@/components/forms/contact-dialog-trigger'
 
 export default function CareersPage() {
   return (
@@ -185,10 +185,10 @@ export default function CareersPage() {
           </Reveal>
 
           <Reveal delay={200} className="mt-10">
-            <ArrowLink href="/#contact">
-              Get in touch
-            </ArrowLink>
-          </Reveal>
+          <ContactDialogTrigger initialType="careers">
+            Apply / Get in touch
+         </ContactDialogTrigger>
+         </Reveal>
         </div>
       </section>
     </main>

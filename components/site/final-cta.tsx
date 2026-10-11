@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { ArrowLink, Eyebrow } from './primitives'
+import { Eyebrow } from './primitives'
+import { ContactDialogTrigger } from '@/components/forms/contact-dialog-trigger'
 import { Reveal } from './reveal'
 
 export function FinalCta({
@@ -31,11 +32,11 @@ export function FinalCta({
             <span className="block italic normal-case text-sand">what comes next.</span>
           </h2>
         </Reveal>
-        <Reveal delay={240} className="mt-14 flex justify-center">
-          <ArrowLink href="#contact" tone="light">
-            Get in touch
-          </ArrowLink>
-        </Reveal>
+       <Reveal delay={240} className="mt-14 flex justify-center">
+       <ContactDialogTrigger light>
+         Get in touch
+       </ContactDialogTrigger>
+       </Reveal>
       </div>
     </section>
   )

@@ -5,11 +5,11 @@ export function Hero() {
   return (
     <section
       aria-labelledby="hero-heading"
-      className="grain relative flex min-h-[640px] h-[85svh] items-end overflow-hidden bg-deep text-ivory md:h-[100svh]"
+      className="grain relative flex min-h-[700px] h-[100svh] items-end overflow-hidden bg-deep text-ivory"
     >
       <div className="absolute inset-0">
         <Image
-          src="/images/hero.png"
+          src="/images/tawang.jpeg"
           alt="Misty eastern Himalayan ridges at dawn with a small settlement on a forested slope"
           fill
           preload
@@ -21,10 +21,11 @@ export function Hero() {
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-deep/60 via-transparent to-transparent" />
       <Topo variant="light" className="opacity-[0.06] mix-blend-screen" />
 
-      <div className="container-editorial relative pb-10 md:pb-14">
+      <div className="container-editorial relative w-full pb-10 pt-28 md:pb-14 md:pt-32">
         <p className="eyebrow mb-8 flex items-center gap-3 text-sand md:mb-10">
-          <span aria-hidden="true" className="size-1.5 bg-gold" />
-          Tawang / Arunachal Pradesh / India
+          <span aria-hidden="true" className="size-1.5 shrink-0 bg-gold" />
+          <span></span>
+            
         </p>
 
         <h1
@@ -40,7 +41,7 @@ export function Hero() {
         <div className="mt-10 grid gap-8 border-t border-ivory/20 pt-8 md:mt-14 md:grid-cols-12 md:items-end">
           <p className="max-w-md text-pretty text-base leading-relaxed text-ivory/80 md:col-span-5 md:text-lg">
             Kemjet Himalog is a diversified enterprise rooted in the Himalayas — building across education,
-            infrastructure, construction products, technology and permit services.
+            infrastructure, construction products, technology , permit services and Agriculture.
           </p>
           <div className="flex flex-wrap gap-3 md:col-span-7 md:justify-end">
             <ArrowLink href="/#businesses" tone="light">

@@ -6,14 +6,28 @@ import { useEffect, useRef, useState } from 'react'
 import { ArrowRight, Menu, X } from 'lucide-react'
 import { BUSINESSES, NAV_LINKS } from '@/lib/site'
 import { cn } from '@/lib/utils'
+import { ContactDialog } from '@/components/forms/contact-dialog'
 
 export function Wordmark({ className }: { className?: string }) {
-  return (
-    <span className={cn('flex items-baseline gap-2 leading-none', className)}>
-      <span className="font-serif text-2xl font-medium tracking-[0.18em]">KEMJET</span>
-      <span className="eyebrow text-[0.6rem] text-gold">Himalog</span>
+return (
+<span className={cn('flex shrink-0 items-center gap-3', className)}>
+<img
+     src="/images/kemjet-logo.png"
+     alt="Kemjet Himalog"
+     className="size-12 shrink-0 object-contain"
+   />
+
+  <span className="flex flex-col justify-center gap-1">
+    <span className="font-serif text-xl font-medium leading-none tracking-[0.16em] md:text-2xl">
+      KEMJET
     </span>
-  )
+    <span className="eyebrow text-[0.55rem] leading-none tracking-[0.22em] text-gold">
+      HIMALOG
+    </span>
+  </span>
+</span>
+
+)
 }
 
 export function SiteHeader() {
@@ -22,6 +36,7 @@ export function SiteHeader() {
   const pathname = usePathname()
   const menuButtonRef = useRef<HTMLButtonElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const [contactOpen, setContactOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 48)
@@ -61,12 +76,12 @@ export function SiteHeader() {
           : 'border-b border-transparent bg-transparent py-6',
       )}
     >
-      <div className="container-editorial flex items-center justify-between gap-8">
-        <Link href="/" aria-label="Kemjet Himalog — home" className="py-2">
+      <div className="container-editorial flex items-center justify-between gap-4 xl:gap-6">
+        <Link href="/" aria-label="Kemjet Himalog — home" className="shrink-0 py-2">
           <Wordmark />
         </Link>
 
-        <nav aria-label="Primary" className="hidden lg:block">
+        <nav aria-label="Primary" className="hidden xl:block">
           <ul className="flex items-center gap-10">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
@@ -84,18 +99,26 @@ export function SiteHeader() {
         <div className="flex items-center gap-3">
           <Link
             href="/#businesses"
-            className="eyebrow hidden min-h-11 items-center gap-3 border border-gold/60 px-5 text-ivory transition-colors duration-300 hover:border-gold hover:bg-gold hover:text-deep md:inline-flex"
+           className="eyebrow hidden min-h-11 items-center gap-3 border border-gold/60 px-5 text-ivory transition-colors duration-300 hover:border-gold hover:bg-gold hover:text-deep xl:inline-flex"
           >
             Explore Businesses
             <ArrowRight aria-hidden="true" className="size-3.5" />
           </Link>
+          <button
+            type="button"
+            onClick={() => setContactOpen(true)}
+            className="eyebrow hidden min-h-11 items-center gap-2 bg-gold px-5 text-deep transition-colors duration-300 hover:bg-sand xl:inline-flex"
+             >
+             Get in Touch
+             <ArrowRight aria-hidden="true" className="size-3.5" />
+             </button>
           <button
             ref={menuButtonRef}
             type="button"
             onClick={() => setOpen(true)}
             aria-expanded={open}
             aria-controls="mobile-menu"
-            className="inline-flex size-11 items-center justify-center lg:hidden"
+            className="inline-flex size-11 items-center justify-center xl:hidden"
           >
             <Menu aria-hidden="true" className="size-6" />
             <span className="sr-only">Open menu</span>
@@ -110,7 +133,7 @@ export function SiteHeader() {
         aria-modal="true"
         aria-label="Site menu"
         hidden={!open}
-        className="fixed inset-0 z-[60] overflow-y-auto bg-deep text-ivory lg:hidden"
+        className="fixed inset-0 z-[60] overflow-y-auto bg-deep text-ivory xl:hidden"
       >
         <div
           aria-hidden="true"
@@ -167,10 +190,25 @@ export function SiteHeader() {
               ))}
             </ul>
           </nav>
-
+          <button
+           type="button"
+           onClick={() => {
+           setOpen(false)
+           setContactOpen(true)
+           }}
+           className="mt-10 inline-flex min-h-12 w-full items-center justify-between bg-gold px-5 text-sm font-medium text-deep"
+           >
+           Get in Touch
+           <ArrowRight aria-hidden="true" className="size-4" />
+           </button>
           <p className="eyebrow mt-12 text-sand/70">Tawang / Arunachal Pradesh / India</p>
         </div>
-      </div>
+            </div>
+
+      <ContactDialog
+        open={contactOpen}
+        onClose={() => setContactOpen(false)}
+      />
     </>
   )
 }
