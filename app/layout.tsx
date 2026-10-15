@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   // Next.js automatically detects app/icon.png.
   // Keep your existing apple icon if that file is available.
   icons: {
-    apple: '/logo.png',
+    icon: '/logo.png',
   },
 }
 
