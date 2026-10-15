@@ -20,19 +20,65 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kemjethimalog.com'),
+
   title: {
-    default: 'Kemjet Himalog — Rooted in the Himalayas. Built for what comes next.',
-    template: '%s — Kemjet Himalog',
+    default: 'Kemjet Himalog | Official Website',
+    template: '%s | Kemjet Himalog',
   },
+
   description:
-    'Kemjet Himalog Technologies Private Limited is a diversified enterprise registered in Tawang, Arunachal Pradesh, spanning education, infrastructure, construction products, technology and permit services.',
-  generator: 'v0.app',
+    'Official website of Kemjet Himalog Technologies Private Limited, based in Tawang, Arunachal Pradesh. Discover our work across technology and Inner Line Permit services, education and youth development, construction, Himalayan agriculture, and infrastructure.',
+
+  applicationName: 'Kemjet Himalog',
+
+  keywords: [
+    'Kemjet Himalog',
+    'Kemjet Himalog Technologies Private Limited',
+    'Kemjet Technology',
+    'Inner Line Permit Arunachal Pradesh',
+    'ILP services',
+    'Tawang Arunachal Pradesh',
+    'education and youth development',
+    'Himalayan agriculture',
+    'construction and infrastructure Northeast India',
+  ],
+
+  creator: 'Kemjet Himalog Technologies Private Limited',
+  publisher: 'Kemjet Himalog Technologies Private Limited',
+
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    siteName: 'Kemjet Himalog',
+    url: 'https://kemjethimalog.com/',
+    title: 'Kemjet Himalog | Official Website',
+    description:
+      'Building a stronger future. From the Himalayas. Explore Kemjet Himalog and its businesses across Northeast India.',
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Kemjet Himalog | Official Website',
+    description:
+      'Building a stronger future. From the Himalayas. Discover Kemjet Himalog Technologies Private Limited.',
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+
+  // Next.js automatically detects app/icon.png.
+  // Keep your existing apple icon if that file is available.
   icons: {
-    icon: [
-      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
-    ],
     apple: '/apple-icon.png',
   },
 }
@@ -48,7 +94,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${manrope.variable}`}>
+    <html lang="en-IN" className={`${cormorant.variable} ${manrope.variable}`}>
       <body className="bg-ivory text-charcoal antialiased">
         <a
           href="#main"
@@ -56,9 +102,13 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+
         <SiteHeader />
+
         <main id="main">{children}</main>
+
         <SiteFooter />
+
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
