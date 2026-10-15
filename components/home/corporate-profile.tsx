@@ -57,7 +57,7 @@ const EMPLOYEES = [
   {
     name: 'Souvik Bhattacharya',
     role: 'Software Engineer',
-    photo: '/images/souvik.jpeg',
+    photo: '/images/souvik.png',
   },
   {
     name: 'Madeshwari',
