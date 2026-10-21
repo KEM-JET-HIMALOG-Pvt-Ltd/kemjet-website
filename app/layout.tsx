@@ -28,6 +28,10 @@ export const metadata: Metadata = {
     template: '%s | Kemjet Himalog',
   },
 
+  verification: {
+    google: 'kfktuNH2059z-jpWF0HQ7AGcowtXJDBWFzkFrN7RP0g',
+  },
+
   description:
     'Official website of Kemjet Himalog Technologies Private Limited, based in Tawang, Arunachal Pradesh. Discover our work across technology and Inner Line Permit services, education and youth development, construction, Himalayan agriculture, and infrastructure.',
 
