@@ -4,6 +4,7 @@ import { Cormorant_Garamond, Manrope } from 'next/font/google'
 import { SiteHeader } from '@/components/site/site-header'
 import { SiteFooter } from '@/components/site/site-footer'
 import './globals.css'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -96,6 +97,7 @@ export default function RootLayout({
   return (
     <html lang="en-IN" className={`${cormorant.variable} ${manrope.variable}`}>
       <body className="bg-ivory text-charcoal antialiased">
+      <GoogleAnalytics gaId="G-7XSM852W71" />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-gold focus:px-4 focus:py-3 focus:text-deep"
