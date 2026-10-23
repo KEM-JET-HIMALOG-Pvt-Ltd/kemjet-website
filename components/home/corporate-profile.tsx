@@ -47,7 +47,7 @@ const EMPLOYEES = [
   {
     name: 'Soruno Kent',
     role: 'Operations',
-    photo: '/images/soru.jpeg',
+    photo: '/images/soruu.png',
   },
   {
     name: 'Vijay Kumar',
