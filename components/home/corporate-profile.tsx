@@ -21,7 +21,7 @@ const DIRECTORS = [
     name: 'Lobsang Drema & Rinchin Gyatso',
     designation: 'Chairman & Managing Director',
     biography: '',
-    photo: '/images/rinchin.jpeg',
+    photo: '/images/rinchin.png',
   },
   {
     name: 'Gollo Muze',
