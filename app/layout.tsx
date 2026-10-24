@@ -23,6 +23,14 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL('https://kemjethimalog.com'),
 
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '32x32' },
+    ],
+    
+  },
+
   title: {
     default: 'Kemjet Himalog | Official Website',
     template: '%s | Kemjet Himalog',
